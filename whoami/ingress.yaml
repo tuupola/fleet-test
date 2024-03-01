@@ -15,14 +15,7 @@ spec:
       http:
         paths:
           - pathType: Prefix
-            path: "/foo"
-            backend:
-              service:
-                name: whoami
-                port:
-                  number: 80
-          - pathType: Prefix
-            path: "/bar"
+            path: "/"
             backend:
               service:
                 name: whoami
